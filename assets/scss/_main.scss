@@ -23,4 +23,18 @@
 .imagenes img {
   max-width: 100%;
   height: auto;
+  animation-name: coloresmoto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  z-index: 0;
+}
+
+@keyframes coloresmoto {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
 }
