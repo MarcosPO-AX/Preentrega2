@@ -2,7 +2,11 @@
 .titulo {
   background: rgb(0, 0, 0);
   background: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 100%);
-  background: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 255) 100%
+  );
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0000ff",GradientType=1);
   width: 100%;
@@ -55,7 +59,11 @@ nav ul li a:hover {
   align-items: center;
   background: blue;
   background: -moz-linear-gradient(90deg, blue 0%, rgb(0, 0, 0) 100%);
-  background: -webkit-linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(0, 0, 255) 0%,
+    rgb(0, 0, 0) 100%
+  );
   background: linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#000000",GradientType=1);
   font-size: 15px;
@@ -64,8 +72,8 @@ nav ul li a:hover {
 }
 
 .parrafo {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .imagenes img {
@@ -78,7 +86,8 @@ nav ul li a:hover {
 }
 
 @keyframes coloresmoto {
-  0%, 100% {
+  0%,
+  100% {
     filter: hue-rotate(0deg);
   }
   50% {
@@ -212,7 +221,11 @@ body {
   line-height: 1.6;
   background: rgb(0, 0, 255);
   background: -moz-linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
-  background: -webkit-linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(0, 0, 255) 0%,
+    rgb(0, 0, 0) 100%
+  );
   background: linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#000000",GradientType=1);
   font-size: 20px;
