@@ -7,16 +7,21 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 1rem;
   color: wheat;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+
   nav ul {
     justify-content: flex-end;
   }
 
   .contenido {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -24,7 +29,30 @@ body {
   .descripcion {
     flex: 1;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 1.125rem;
+  }
+
+  .imagenes {
+    flex: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  .contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .descripcion {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 1.125rem;
   }
 
   .imagenes {
@@ -36,6 +64,34 @@ body {
   nav ul {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .imagenes {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .contenido {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 

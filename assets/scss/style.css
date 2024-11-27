@@ -2,11 +2,7 @@
 .titulo {
   background: rgb(0, 0, 0);
   background: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 100%);
-  background: -webkit-linear-gradient(
-    90deg,
-    rgb(0, 0, 0) 0%,
-    rgb(0, 0, 255) 100%
-  );
+  background: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 100%);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0000ff",GradientType=1);
   width: 100%;
@@ -59,20 +55,12 @@ nav ul li a:hover {
   align-items: center;
   background: blue;
   background: -moz-linear-gradient(90deg, blue 0%, rgb(0, 0, 0) 100%);
-  background: -webkit-linear-gradient(
-    90deg,
-    rgb(0, 0, 255) 0%,
-    rgb(0, 0, 0) 100%
-  );
+  background: -webkit-linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
   background: linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#000000",GradientType=1);
   font-size: 15px;
   width: 100%;
   padding: 20px;
-}
-.parrafo {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .imagenes img {
@@ -85,8 +73,7 @@ nav ul li a:hover {
 }
 
 @keyframes coloresmoto {
-  0%,
-  100% {
+  0%, 100% {
     filter: hue-rotate(0deg);
   }
   50% {
@@ -134,22 +121,45 @@ footer {
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 1rem;
   color: wheat;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
   nav ul {
     justify-content: flex-end;
   }
   .contenido {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .descripcion {
     flex: 1;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 1.125rem;
+  }
+  .imagenes {
+    flex: 1;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav ul {
+    justify-content: center;
+  }
+  .contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .descripcion {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 1.125rem;
   }
   .imagenes {
     flex: 1;
@@ -159,6 +169,29 @@ body {
   nav ul {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .descripcion {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .imagenes {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .contenido {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 /* FIN CSS PAG 1 */
@@ -174,11 +207,7 @@ body {
   line-height: 1.6;
   background: rgb(0, 0, 255);
   background: -moz-linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
-  background: -webkit-linear-gradient(
-    90deg,
-    rgb(0, 0, 255) 0%,
-    rgb(0, 0, 0) 100%
-  );
+  background: -webkit-linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
   background: linear-gradient(90deg, rgb(0, 0, 255) 0%, rgb(0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#000000",GradientType=1);
   font-size: 20px;
