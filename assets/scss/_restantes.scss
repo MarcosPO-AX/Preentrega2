@@ -73,8 +73,8 @@
   /* Estilos para tabletas y laptops */
 }
 
-/* Pantallas grandes (más de 1200px de ancho) */
-/*@media screen and (min-width: 1200px) {
+/* Pantallas grandes (más de 1920px de ancho) */
+@media screen and (min-width: 1920px) {
   .contenido-pag-2 {
     flex-direction: column;
     align-items: center;
@@ -83,4 +83,4 @@
   .video-container-right {
     align-items: center;
   }
-}*/
+}
