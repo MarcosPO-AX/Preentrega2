@@ -251,14 +251,14 @@ h2 {
   body {
     font-size: 18px; /* Aumentamos el tamaño de fuente */
   }
-  .container {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     max-width: 1140px; /* Aumentamos el ancho máximo del contenedor */
     margin: 0 auto;
   }
-  .header {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     padding: 20px 40px; /* Aumentamos el padding para más espacio en pantallas grandes */
   }
-  .grid {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Disposición en 3 columnas */
     gap: 20px;
