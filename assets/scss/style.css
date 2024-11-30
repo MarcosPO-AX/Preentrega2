@@ -183,6 +183,7 @@ h2 {
 }
 
 .video-container {
+  display: flex;
   width: 100%;
   max-width: 400px;
   position: relative;
@@ -193,6 +194,7 @@ h2 {
 }
 
 .video-container iframe {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -204,9 +206,11 @@ h2 {
   .contenido-pag-2 .video-container .video-container iframe .video-container-right {
     flex-direction: column;
     align-items: center;
+    display: flex;
   }
   .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     align-items: center;
+    display: flex;
   }
 }
 
