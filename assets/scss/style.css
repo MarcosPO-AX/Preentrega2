@@ -201,57 +201,47 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .contenido-pag-2,
-  .video-container,
-  .video-container iframe {
+  .contenido-pag-2 .video-container .video-container iframe .video-container-right {
     flex-direction: column;
     align-items: center;
   }
-  .video-container-right {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     align-items: center;
   }
 }
 @media screen and (max-width: 599px) {
-  .contenido-pag-2,
-  .video-container,
-  .video-container iframe {
+  .contenido-pag-2 .video-container .video-container iframe .video-container-right {
     flex-direction: column;
     align-items: center;
   }
-  .video-container-right {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     align-items: center;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .contenido-pag-2,
-  .video-container,
-  .video-container iframe {
+  .contenido-pag-2 .video-container .video-container iframe .video-container-right {
     flex-direction: column;
     align-items: center;
   }
-  .video-container-right {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     align-items: center;
   }
 }
 @media screen and (min-width: 1920px) {
-  .contenido-pag-2,
-  .video-container,
-  .video-container iframe {
+  .contenido-pag-2 .video-container .video-container iframe .video-container-right {
     flex-direction: column;
     align-items: center;
   }
-  .video-container-right {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     align-items: center;
   }
 }
 @media screen and (min-width: 2560px) and (max-width: 3840) {
-  .contenido-pag-2,
-  .video-container,
-  .video-container iframe {
+  .contenido-pag-2 .video-container .video-container iframe .video-container-right {
     flex-direction: column;
     align-items: center;
   }
-  .video-container-right {
+  .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     align-items: center;
   }
 }
