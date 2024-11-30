@@ -132,10 +132,14 @@
     align-items: center;
   }
 }
-/* Media Query para pantallas de 27 pulgadas (resolución QHD) y mayores */
+
 @media screen and (min-width: 1200px) {
-  body {
-    font-size: 18px; /* Aumentamos el tamaño de fuente */
+  .video-container-right
+    .video-container
+    iframe
+    .video-container
+    .contenido-pag-2 {
+    font-size: 18px;
   }
 
   .video-container-right
@@ -143,7 +147,7 @@
     iframe
     .video-container
     .contenido-pag-2 {
-    max-width: 1140px; /* Aumentamos el ancho máximo del contenedor */
+    max-width: 1140px;
     margin: 0 auto;
   }
 
@@ -152,7 +156,7 @@
     iframe
     .video-container
     .contenido-pag-2 {
-    padding: 20px 40px; /* Aumentamos el padding para más espacio en pantallas grandes */
+    padding: 20px 40px;
   }
 
   .video-container-right
@@ -161,7 +165,7 @@
     .video-container
     .contenido-pag-2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Disposición en 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 }
