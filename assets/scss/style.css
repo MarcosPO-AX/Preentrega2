@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -243,6 +244,24 @@ h2 {
   }
   .video-container-right .video-container iframe .video-container .contenido-pag-2 {
     align-items: center;
+  }
+}
+/* Media Query para pantallas de 27 pulgadas (resolución QHD) y mayores */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 18px; /* Aumentamos el tamaño de fuente */
+  }
+  .container {
+    max-width: 1140px; /* Aumentamos el ancho máximo del contenedor */
+    margin: 0 auto;
+  }
+  .header {
+    padding: 20px 40px; /* Aumentamos el padding para más espacio en pantallas grandes */
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Disposición en 3 columnas */
+    gap: 20px;
   }
 }
 
