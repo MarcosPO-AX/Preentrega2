@@ -1,4 +1,4 @@
-footer {
+.footer-contenido {
   background-color: rgb(46, 45, 46);
   color: white;
   padding: 20px;
@@ -7,13 +7,6 @@ footer {
   align-items: center;
   position: relative;
   bottom: 0;
-  width: 100%;
-}
-
-.footer-contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 
@@ -28,4 +21,14 @@ footer {
 
 .boton-footer:hover {
   background-color: darkblue;
+}
+
+@media (max-width: 768px) {
+  .contenido img {
+    width: 100%;
+  }
+
+  .descripcion {
+    flex-direction: column;
+  }
 }

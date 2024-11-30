@@ -1,59 +1,74 @@
-/*.contenido {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: $colo-principal;
-  background: -moz-linear-gradient(90deg, $colo-principal 0%, $otro-color 100%);
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(0, 0, 255, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 255, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#000000",GradientType=1);
-  font-size: 15px;
+.contenido {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 255) 100%);
   width: 100%;
-  padding: 20px;
-}*/
-.contenedor-textomotos {
+  margin: 0 auto;
   display: flex;
-
   flex-direction: column;
+  padding: 20px;
+}
 
-  width: 80%;
-
+.contenido img {
+  width: 50%;
+  height: auto;
   margin: 0 auto;
 }
 
-.contenedor-interno-textomotos {
+.descripcion {
+  background: $colo-principal blue;
+  $otro-color: rgba(0, 0, 0, 1);
   display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+}
 
+.texto-desc {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-/*.parrafo {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}*/
 
-.imagenes img {
-  max-width: 100%;
-  height: auto;
-  animation-name: coloresmoto;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  z-index: 0;
+.texto-desc ul {
+  width: 60%;
+  color: antiquewhite;
+}
+h2 {
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
+  font-size: 30px;
+  text-decoration: solid;
+}
+h2:hover {
+  color: red;
 }
 
-@keyframes coloresmoto {
-  0%,
-  100% {
-    filter: hue-rotate(0deg);
+.texto-desc-p {
+  padding: 10px;
+  margin: 10px 0;
+  color: antiquewhite;
+}
+.texto-desc-p2 {
+  padding: 100px;
+  margin: 10px 0;
+  color: white;
+  font-size: 20px;
+}
+.texto-desc-p,
+.texto-desc-p2,
+h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 100%;
   }
-  50% {
-    filter: hue-rotate(360deg);
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
