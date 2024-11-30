@@ -240,5 +240,16 @@ h2 {
     align-items: center;
   }
 }
+/* Pantallas con resolución 2560x1440 */
+@media screen and (min-width: 2560px) {
+  .contenido-pag-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-container-right {
+    align-items: center;
+  }
+  /* Estilos para pantallas de 27 pulgadas y mayores */
+}
 
 /*# sourceMappingURL=style.css.map */
