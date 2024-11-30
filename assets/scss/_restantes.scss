@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
 .texto-contenido {
@@ -25,14 +26,13 @@
   width: 100%;
   max-width: 400px;
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; /* Mantener proporciones de 16:9 */
   height: 0;
   overflow: hidden;
   border: solid 5px rgb(0, 0, 0);
 }
 
 .video-container iframe {
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -40,23 +40,47 @@
   height: 100%;
 }
 
+/* Media Query para pantallas pequeñas (menos de 768px, celulares) */
 @media (max-width: 768px) {
-  .contenido-pag-2
-    .video-container
-    .video-container
-    iframe
-    .video-container-right {
+  .contenido-pag-2 {
     flex-direction: column;
-    align-items: center;
-    display: flex;
+    align-items: center; /* Centra los elementos */
+    padding: 15px; /* Reduce el padding para pantallas pequeñas */
   }
 
-  .video-container-right
-    .video-container
-    iframe
-    .video-container
-    .contenido-pag-2 {
-    align-items: center;
-    display: flex;
+  .texto-contenido {
+    padding-right: 0; /* Elimina el padding derecho en pantallas pequeñas */
+    margin-bottom: 20px; /* Añade espacio abajo para separar el texto del video */
+  }
+
+  .video-container-right {
+    align-items: center; /* Centra los elementos dentro del contenedor */
+    flex-direction: column; /* Cambia a columna */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    margin-top: 20px; /* Añade margen superior para separar del texto */
+  }
+
+  .video-container {
+    max-width: 100%; /* El video ocupará todo el ancho disponible */
+    padding-bottom: 56.25%; /* Mantiene las proporciones de 16:9 */
+  }
+}
+
+/* Media Query para pantallas grandes (mayores de 1200px, pantallas de escritorio grandes) */
+@media (min-width: 1200px) {
+  .contenido-pag-2 {
+    padding: 40px; /* Añade más padding en pantallas grandes */
+  }
+
+  .texto-contenido {
+    padding-right: 40px; /* Aumenta el padding derecho para pantallas grandes */
+  }
+
+  .video-container-right {
+    gap: 40px; /* Aumenta el espacio entre los videos en pantallas grandes */
+  }
+
+  .video-container {
+    max-width: 600px; /* Hace los videos más grandes en pantallas grandes */
   }
 }
