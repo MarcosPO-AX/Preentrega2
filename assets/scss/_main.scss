@@ -34,14 +34,17 @@
 
 .texto-desc ul {
   width: 60%;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
+}
+::marker {
+  color: red;
 }
 h2 {
   margin: 10px 0;
   padding: 10px;
   color: white;
   font-size: 30px;
-  text-decoration: solid;
+  text-decoration-line: underline;
 }
 h2:hover {
   color: red;
@@ -50,7 +53,7 @@ h2:hover {
 .texto-desc-p {
   padding: 10px;
   margin: 10px 0;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
 }
 .texto-desc-p2 {
   padding: 100px;
