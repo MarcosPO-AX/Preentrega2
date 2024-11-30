@@ -1,4 +1,4 @@
-.contenido {
+/*.contenido {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,11 +18,26 @@
   font-size: 15px;
   width: 100%;
   padding: 20px;
+}*/
+.contenedor-textomotos {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 80%;
+
+  margin: 0 auto;
 }
-.parrafo {
+
+.contenedor-interno-textomotos {
+  display: flex;
+
+  align-items: center;
+}
+/*.parrafo {
   margin-top: 100px;
   margin-bottom: 100px;
-}
+}*/
 
 .imagenes img {
   max-width: 100%;
