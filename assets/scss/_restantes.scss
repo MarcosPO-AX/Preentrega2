@@ -47,3 +47,17 @@
     align-items: center;
   }
 }
+/* Pantallas pequeñas (menos de 600px de ancho) */
+@media screen and (max-width: 599px) {
+  /* Estilos para dispositivos móviles */
+}
+
+/* Pantallas medianas (600px a 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para tabletas y laptops */
+}
+
+/* Pantallas grandes (más de 1200px de ancho) */
+@media screen and (min-width: 1200px) {
+  /* Estilos para pantallas de escritorio grandes (incluyendo monitores de 27 pulgadas) */
+}
