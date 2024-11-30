@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -64,6 +63,7 @@ nav ul li a:hover {
   width: 50%;
   height: auto;
   margin: 0 auto;
+  border: solid 5px black;
 }
 
 .descripcion {
@@ -189,6 +189,7 @@ h2 {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
+  border: solid 5px rgb(0, 0, 0);
 }
 
 .video-container iframe {
@@ -208,7 +209,6 @@ h2 {
     align-items: center;
   }
 }
-/* Pantallas pequeñas (menos de 600px de ancho) */
 @media screen and (max-width: 599px) {
   .contenido-pag-2 {
     flex-direction: column;
@@ -217,9 +217,7 @@ h2 {
   .video-container-right {
     align-items: center;
   }
-  /* Estilos para dispositivos móviles */
 }
-/* Pantallas medianas (600px a 1024px) */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .contenido-pag-2 {
     flex-direction: column;
@@ -228,9 +226,7 @@ h2 {
   .video-container-right {
     align-items: center;
   }
-  /* Estilos para tabletas y laptops */
 }
-/* Pantallas grandes (más de 1920px de ancho) */
 @media screen and (min-width: 1920px) {
   .contenido-pag-2 {
     flex-direction: column;
@@ -240,8 +236,7 @@ h2 {
     align-items: center;
   }
 }
-/* Pantallas con resolución 2560x1440 */
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 3840px) {
   .contenido-pag-2 {
     flex-direction: column;
     align-items: center;
@@ -249,7 +244,6 @@ h2 {
   .video-container-right {
     align-items: center;
   }
-  /* Estilos para pantallas de 27 pulgadas y mayores */
 }
 
 /*# sourceMappingURL=style.css.map */
